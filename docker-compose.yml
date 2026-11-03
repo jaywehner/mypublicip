@@ -1,0 +1,8 @@
+services:
+  mypublicip:
+    build: .
+    image: mypublicip
+    container_name: mypublicip
+    restart: unless-stopped
+    ports:
+      - "8080:80"
